@@ -1,0 +1,149 @@
+/* Asegúrate de que el contenedor principal de la sección de ventas esté centrado */
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la pantalla */
+    width: 100vw; /* Ancho completo de la pantalla */
+    margin: 0; /* Elimina cualquier margen que pueda estar empujando el contenido */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout general para evitar que el sidebar interfiera */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajuste para evitar que el contenido se vea afectado por el sidebar */
+.sales-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 250px); /* Ajusta esto según el tamaño del sidebar */
+    height: 100vh;
+    margin-left: 250px; /* Espacio reservado para el sidebar, ajusta según sea necesario */
+}
+
+/* Contenedor principal para centrar la sección de ventas */
+.sales-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de apertura de caja */
+.cash-register-section {
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de facturador */
+.invoicing-section {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sales-form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sales-form-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.sales-form-container button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sales-form-container button:hover {
+    background-color: #a83232;
+}
+
+.products-container, .selected-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-item, .selected-product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.product-item button, .selected-product-item button {
+    padding: 5px 10px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover, .selected-product-item button:hover {
+    background-color: #a83232;
+}
+
+.selected-product-item input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+}
+
+.payment-methods input {
+    margin-right: 10px;
+}

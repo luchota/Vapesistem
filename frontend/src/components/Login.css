@@ -1,0 +1,40 @@
+/* Login.css */
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(249, 248, 248, 0.1);
+    text-align: center;
+    
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #fffbfb;
+}
+
+.input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e80606;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover:hover {
+    background-color: #b30000;
+}
