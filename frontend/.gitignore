@@ -31,3 +31,12 @@ yarn-error.log*
 
 # Windows system files
 Thumbs.db
+*.sql
+
+# Ignorar archivos de bases de datos SQLite (si usas SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignorar carpetas donde puedes tener dumps de bases de datos
+/db_dumps/
