@@ -42,3 +42,7 @@ Thumbs.db
 /db_dumps/
 
 backend/db.mjs
+backend/utils/emails.mjs
+package-lock.json
+backend/server.mjs
+backend/scripts/createInitialUser.mjs
