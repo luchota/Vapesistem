@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Home.css';
+import './styles/Home.css';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -8,14 +8,23 @@ const Home = () => {
     return (
         <div className="home-container">
             <div className="sidebar">
-                <button onClick={() => navigate('/sales')}>Ventas</button>
-                <button onClick={() => navigate('/products')}>Productos</button>
-                <button onClick={() => navigate('/reports')}>Reportes</button>
+                <button onClick={() => navigate('/sales')} className="button-with-icon">
+                    <span className="icon">💼</span> 
+                    <span className="text">Ventas</span>
+                </button>
+                <button onClick={() => navigate('/products')} className="button-with-icon">
+                    <span className="icon">📦</span> 
+                    <span className="text">Productos</span>
+                </button>
+                <button onClick={() => navigate('/reports')} className="button-with-icon">
+                    <span className="icon">📊</span> 
+                    <span className="text">Reportes</span>
+                </button>
                 <img src="/images/logo.png" alt="Logo" className="logo" />
             </div>
             <div className="content-container">
                 <div className="main-content">
-                    
+                    {/* Aquí puedes añadir contenido principal */}
                 </div>
                 <div className="dollar-widget">
                     <iframe
@@ -28,7 +37,6 @@ const Home = () => {
                             border: '1px solid #bcbcbc',
                         }}
                         src="https://dolarhoy.com/i/cotizaciones/dolar-blue"
-                        
                     ></iframe>
                 </div>
             </div>

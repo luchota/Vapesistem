@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './ReportForm.css';
+import './styles/ReportForm.css';
 
 const StockReport = () => {
     const [email, setEmail] = useState('');

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import "./Login.css";
+import './styles/Login.css';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -25,25 +25,37 @@ const Login = () => {
     };
 
     return (
-        <div>
-            <h2>Iniciar Sesion</h2>
-            <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="Username"
-            />
-            <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password"
-            />
-            <button onClick={handleLogin}>Login</button>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
-            {success && <p style={{ color: 'green' }}>Inicio Exitoso</p>}
+        <div className="container">
+            <div className="input-container">
+                <div className="input-content">
+                    <h2>Iniciar Sesión</h2>
+                    <div className="input-dist">
+                        <input
+                            type="text"
+                            className="input-is"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            placeholder="Username"
+                        />
+                        <input
+                            type="password"
+                            className="input-is"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            placeholder="Password"
+                        />
+                    </div>
+                    <button className="submit-button" onClick={handleLogin}>Iniciar Sesión</button>
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
+                    {success && <p style={{ color: 'green' }}>Inicio Exitoso</p>}
+                </div>
+            </div>
         </div>
     );
 };
 
 export default Login;
+
+
+
+
