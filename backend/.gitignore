@@ -41,8 +41,8 @@ Thumbs.db
 # Ignorar carpetas donde puedes tener dumps de bases de datos
 /db_dumps/
 
-backend/db.mjs
-backend/utils/emails.mjs
-package-lock.json
-backend/server.mjs
-backend/scripts/createInitialUser.mjs
+/backend/db.mjs
+/backend/utils/emails.mjs
+/package-lock.json
+/backend/server.mjs
+/backend/scripts/createInitialUser.mjs
